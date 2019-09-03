@@ -10,9 +10,9 @@ int main()
 	int a[10],n,i;
 	double time;
 	clock_t start,end;
-	cout<<"Enter the size of an array\n";
+	cout<<"Enter the size of an array: ";
 	cin>>n;
-	cout<<"Enter the elements of an array\n";
+	cout<<"Enter the elements of an array: ";
 	for(i=0;i<n;i++)
 	{
 		cin>>a[i];
@@ -20,14 +20,15 @@ int main()
 	start=clock();
 	mergesort(a,0,n-1);
 	end=clock();
-	cout<<"Sorted elements are\n";
+	cout<<"Sorted elements are: ";
 	for(i=0;i<n;i++)
 	{
 		cout<<a[i]<<" ";
 	}
 	time=(double)(end-start)/CLOCKS_PER_SEC;
-	cout<<"\nTime complexity is "<<time<<" secs\n";
+	cout<<"\nTime complexity is: "<<time<<"secs\n";
 }
+
 void mergesort(int a[],int low,int high)
 {
 	int mid;
@@ -38,6 +39,7 @@ void mergesort(int a[],int low,int high)
 	mergesort(a,mid+1,high);
 	merge(a,low,mid,high);
 }
+
 void merge(int a[],int low,int mid,int high)
 {
 	int i,j,k,b[10];
