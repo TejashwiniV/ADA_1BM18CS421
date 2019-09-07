@@ -1,4 +1,3 @@
-/*Program based on Depth First search
 4b. Given a 2D matrix of 0s and 1s, find total number of clusters or Islands formed by 
 elements with value 1.*/
 
@@ -21,7 +20,6 @@ void DFS(int row,int col)
 		}
 	}
 }
-
 int main()
 {
 	int j,i;
@@ -37,7 +35,7 @@ int main()
 	{
 		for(j=0;j<n;j++)
 		{
-			cin>>matrix[i][j];
+			cin >> matrix[i][j];
 		}
 	}
 	for(i=0;i<m;i++)
@@ -62,7 +60,7 @@ int main()
 	cout << "Number of islands: " << count;
 	end=clock();
 	time=(double)(end-start)/CLOCKS_PER_SEC;
-	cout<<"\nExecution time is: "<<time<<"secs\n";
+	cout << "\nExecution time is: "<<time<<"secs\n";
 	return 0;
 	
 }
