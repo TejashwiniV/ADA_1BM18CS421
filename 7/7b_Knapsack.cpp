@@ -93,12 +93,13 @@ Enter the weight of each item: 3 2 1 4 5
 Enter the profit of each item: 25 20 15 40 50
 Enter the knapsack capacity: 6
 The output is: 
-	0   0   0	  0	  0	  0	  0
-	0	  0   0	  25	25	25	25
-	0	  0   20	25	25	45	45
-	0   15  20	35	40	45	60
-	0	  15	20	35	40	55	60
-	0	  15	20	35	40	55	65
+	0	0	0	0	0	0	0
+	0	0	0	25	25	25	25
+	0	0	20	25	25	45	45
+	0	15	20	35	40	45	60
+	0	15	20	35	40	55	60
+	0	15	20	35	40	55	65
 The optimal solution is: 65
-The solution vector is:  0 0 1 0 1
+The solution vector is: 	0	0	1	0	1
+
 */
